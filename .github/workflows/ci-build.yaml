@@ -25,10 +25,10 @@ jobs:
           --health-timeout 5s
           --health-retries 5
     steps:
-      - name: Checkout
+      - name: Checkout-step1
         uses: actions/checkout@v2
       
-      - name: Install dependencies
+      - name: Install dependencies-step2
         run: |
           python -m pip install --upgrade pip wheel
           pip install -r requirements.txt
