@@ -187,6 +187,6 @@ class TestAccountService(TestCase):
     
     def test_cors_sercurity(self):
         """It should return a CORS header """
-        resposen = self.client.geT('/', environ_overrides=HTTPS_ENVIRON)
+        response = self.client.get('/', environ_overrides=HTTPS_ENVIRON)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.headers.get('Access-Control-Allow-Origin'), '*')
