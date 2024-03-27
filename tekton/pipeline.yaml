@@ -54,7 +54,7 @@ spec:
     - name: tests
       workspaces:
         - name: source
-          workspacce: pipeline-workspace
+          workspace: pipeline-workspace
       taskRef:
         name: nose
       params:
